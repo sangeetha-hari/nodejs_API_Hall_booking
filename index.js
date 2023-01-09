@@ -102,9 +102,8 @@ app.get("/rooms",(req,res)=>{
 
 app.get("/booking",(req,res)=>{
    console.log("this is a booking request")
-   //this should not show the booked room
    res.send(boooking_room);
-   // res.send("this is booking page")
+
 })
 
 app.get("/booking/:dt", (req,res)=>{
